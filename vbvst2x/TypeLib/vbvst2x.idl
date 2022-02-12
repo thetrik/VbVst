@@ -1,0 +1,31 @@
+[
+   uuid(4397065D-5E73-413D-A4D2-907178CCCE80),
+   helpstring("VST2.X type library for Visual Basic 6.0 by The trick"),
+   version(1.00)
+]
+library VBVST2X {
+
+	importlib("stdole2.tlb");
+
+	#define BOOLEAN VARIANT_BOOL
+
+	#include "aliases.inc"
+	#include "ntdll.inc"
+	#include "kernel32.inc"
+	#include "gdi32.inc"
+	#include "user32.inc"
+	#include "advapi32.inc"
+	#include "ole32.inc"
+	#include "oleaut32.inc"
+	#include "shlwapi.inc"
+	#include "msvbvm60.inc"
+	#include "gdiplus.inc"
+	#include "msimg32.inc"
+	#include "winmm.inc"
+	#include "comdlg32.inc"
+	#include "psapi.inc"
+	#include "structures.inc"
+	#include "IVBVstEffect.inc"
+	#include "vst2x.inc"
+
+}

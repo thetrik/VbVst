@@ -1,0 +1,6 @@
+
+*.vbw
+*.pdb
+*.exp
+*.lib
+undistributable/

@@ -1,0 +1,16 @@
+[
+   uuid(4397065D-5E73-413D-A4D2-907178CCCE81),
+   helpstring("VST2.X debug type library for Visual Basic 6.0 by The trick"),
+   version(1.00)
+]
+library VBVST2X_dbg {
+
+	importlib("stdole2.tlb");
+	importlib("..\..\vbvst2x\TypeLib\vbvst2x.tlb");
+
+	#define HANDLE vbvst2x.HANDLE
+
+	#include "IVBVstEffect.inc"
+	#include "structures.inc"
+
+}

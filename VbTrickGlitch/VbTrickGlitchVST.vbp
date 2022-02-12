@@ -1,0 +1,53 @@
+Type=OleDll
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{4397065D-5E73-413D-A4D2-907178CCCE80}#1.0#0#..\vbvst2x\TypeLib\vbvst2x.tlb#VST2.X type library for Visual Basic 6.0 by The trick
+Module=modVBVst2X; ..\vbvst2x\modVBVst2X.bas
+Module=modVbTrickGlitchVST; modules\modVbTrickGlitchVST.bas
+Class=CVbTrickGlitchVST; classes\CTrickVBGlitchVST.cls
+UserControl=controls\ctlPianoRoll.ctl
+UserControl=controls\ctlKnob.ctl
+UserControl=controls\ctlSlots.ctl
+UserControl=controls\ctlSwitch.ctl
+UserControl=controls\ctlUI.ctl
+Form=forms\frmMain.frm
+Startup="(None)"
+HelpFile=""
+Title="VbTrickGlitch"
+ExeName32="VbTrickGlitchVST.dll"
+Path32="release"
+Command32=""
+Name="VbTrickGlitch"
+HelpContextID="0"
+CompatibleMode="2"
+CompatibleEXE32="release\VbTrickGlitchVST.dll"
+VersionCompatible32="1"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="No company"
+VersionLegalCopyright="The trick (c), 2022"
+VersionProductName="VbTrickGlitch"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=-1
+CodeViewDebugInfo=-1
+NoAliasing=-1
+BoundsCheck=-1
+OverflowCheck=-1
+FlPointCheck=-1
+FDIVCheck=-1
+UnroundedFP=-1
+StartMode=1
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+DebugStartupOption=0
+
+[TAT]
+GlobalChecking=0
+
+[VBCompiler]
+LinkSwitches=-EXPORT:VSTPluginMain -EXPORT:main=VSTPluginMain

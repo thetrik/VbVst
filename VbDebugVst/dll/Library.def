@@ -1,0 +1,11 @@
+LIBRARY VbDebugVstDll
+EXPORTS
+InitializeDebugger
+UninitializeDebugger
+InitializeDebugee
+UninitializeDebugee
+CreatePluginInstance
+DestroyPluginInstance
+GetHostState
+IsServerAlive
+GetSharedData
