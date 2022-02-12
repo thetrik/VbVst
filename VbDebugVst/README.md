@@ -6,7 +6,7 @@ Hello everyone!
 This utility is intended for debug your VST plugins written using **VbVst** framework. 
 Because you can't debug the native-dlls in VB6 IDE (and VST plugins are the native-dlls) i developed this very basic utility.
 
-![Utility](/resources/utility.png)
+![Utility](resources/utility.png)
 
 After you run this utility you need to configure **ProgID** of your VB6 project. 
 You should go to **Debug->Setup** menu option and type the object's **ProgID** (\[ProjectName.ClassName\]). 
@@ -22,13 +22,13 @@ You can load an audio file (WAV file) and use it in the simple **Song Editor**. 
 For example you can load a drum loop and propagate it through the song. The repository contains the example loop. 
 The important thing is the utility supports only the basic formats 8 or 16 bits WAVE-PCM audio.
 
- ![SongEditor](/resources/song_edit.png)
+ ![SongEditor](resources/song_edit.png)
 
 Also it allows to place the MIDI pattern with the notes in this 8 bars (2 track). VST plugin will get the note on/note off events according the pattern. 
 You can edit the pattern in the simple **Pattern Editor**. Just place the notes using the left mouse button and delete them by the right button. 
 You can hold Ctrl-key to change the note velocity. Using Pattern Editor you can test your **ProcessEvents** method.
 
- ![PatternEditor](/resources/pattern_edit.png)
+ ![PatternEditor](resources/pattern_edit.png)
 
 The last track is the event editor. This is the very basic editor for debugging purposes. You can edit the automation here. Richt-click on the panel allows you to select the parameter.
 The first 5 items are related to MIDI events like pitch bend/modulation wheel etc. Other items are the plugin parameters. You can't automate a non-automable parameter.
