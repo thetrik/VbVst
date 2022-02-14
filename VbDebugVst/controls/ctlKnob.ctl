@@ -47,7 +47,7 @@ Private m_lKnobSize     As Long
 Private m_lTextSize     As Long
 Private m_bShowValue    As Boolean
 Private m_bTrackMouse   As Boolean
-Private m_tMouseOffset  As POINT
+Private m_tMouseOffset  As Point
 Private m_hGraphics     As Handle
 Private m_hGPToken      As Handle
 Private m_hGPPen        As Handle
@@ -309,7 +309,7 @@ Private Sub UserControl_MouseMove( _
             ByRef fY As Single)
     Dim lNewVal As Long
     Dim lScrH   As Long
-    Dim tPt     As POINT
+    Dim tPt     As Point
     
     If m_bTrackMouse Then
         
@@ -379,7 +379,9 @@ End Sub
 
 Private Sub UserControl_Initialize()
     Dim tGPInput    As GdiplusStartupInput
-
+    
+    m_lMax = 100    ' // non-SP6 builds
+    
     tGPInput.GdiplusVersion = 1
     
     If GdiplusStartup(m_hGPToken, tGPInput) Then
